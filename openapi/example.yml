@@ -65,3 +65,30 @@ paths:
               schema:
                 type: number
               example: 5
+  /upper:
+    get:
+      tags:
+      summary: String to uppercase.
+      description: String to uppercase.
+      operationId:
+      parameters:
+        - name: a
+          in: path
+          required: true
+          schema:
+            type: number
+          example: 10
+        - name: b
+          in: path
+          required: true
+          schema:
+            type: number
+          example: 2
+      responses:
+        '200':
+          description: Successful operation.
+          content:
+            text/plain:
+              schema:
+                type: number
+              example: 5
